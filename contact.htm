@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="author" content="Niusha Nikpour">
+	<meta name="description" content="Boston Persian Restaurants">
+	<meta name="keywords" content="contact page, contact form, contact niusha, persian, persian, contact me, questions, persian restaurants"/>
+	<title>Contact Page</title>
+    <link rel="stylesheet" href="tpv1.css" type="text/css">
+
+    <style type="text/css">
+form {background-color: lightcoral; 
+		color:white; 
+		font-family:helvetica; 
+		padding: 5%;;
+		width:75%;
+		margin: auto}
+body {background-color: lavenderblush;}
+h1#contacttitle {color:lightsalmon; font-family: helvetica; font-weight: bold; text-align: center;}
+#sitemap {
+justify-content: center;
+background-image:url(persianrug.jpg); font-size: 20pt; color: white; 
+padding: 60px; text-align: center; text-decoration: underline; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 1%;
+}
+#bottom {text-decoration: none; color: white; text-decoration-color: white; font-family: helvetica;}
+	</style>
+	
+	<script>
+function validate1() {
+  event.preventDefault();
+  var myf = document.getElementById("f");
+  var fname = myf.fname.value;
+  var lname = myf.lname.value;
+  var email = myf.Email.value;
+  var contact = myf.Contact.value;
+  var persianfood = myf.Persianfood.value;
+//   found this online on w3
+  var checkboxes = myf.querySelectorAll('input[type="checkbox"]:checked');
+
+  if (fname == "") {
+    alert("Please provide your first name");
+  }
+
+  else if (lname == "") {
+    alert("Please provide your last name");
+  }
+
+  else if (email == "") {
+    alert("Please provide your Email");
+   
+  }
+
+ else if (contact == "Null") {
+    alert("Please select your reason for contact");
+    
+  }
+
+  else if (persianfood !== "Yes" && persianfood !== "No") {
+    alert("Please select if you have had Persian food before.");
+ 
+  }
+
+  else if (checkboxes.length == 0) {
+    alert("Please select at least one continent.");
+   
+  }
+  else {
+    alert("Form Submitted!")
+  }
+}
+
+
+	</script>
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+    <div class="header">
+		<h1 id="bannerheading">Niusha's Persian Restaurant Review</h1>
+	</div>
+    <div class="navbar">
+		<a href="index.htm">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Northeast</button>
+			<div class="dropdown-content">
+				<a href="boston.htm">Boston</a>
+				<a href="nyc.htm">NYC</a>
+				<a href="dc.htm"> Washington D.C</a>
+			</div>
+		  </div>
+	  	<div class="dropdown">
+ 			<button class="dropbtn">Southeast</button>
+			<div class="dropdown-content">
+				<a href="southfl.htm">South FL</a>
+				<a href="atlanta.htm">Atlanta</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">International</button>
+			<div class="dropdown-content">
+				<a href="iran.htm">Iran</a>
+				<a href="london.htm">London</a>
+				<a href="paris.htm">Paris</a>
+		</div>
+		</div>
+		<a href="aboutme.htm">About Me</a>
+		<a href="contact.htm">Contact</a>
+        <a href="credits.htm">Credits</a>
+	</div>	
+
+    <h1 id="contacttitle">Contact Form</h1>
+
+    <form action="" id="f" method="post">
+    
+        <p>
+            First name: <input type="text" name="fname" size="20" maxlength="25" placeholder="First Name"/>
+            Last Name:  <input type="text" name="lname" size="20" maxlength="25" placeholder="Last Name"/>
+        </p>
+    
+        <p>
+            Email Address:  <input type="text" name="Email" size="20" maxlength="35" placeholder="Your email address"/>
+        </p>
+    
+    
+        <p>
+        Please select contact reason:
+            <Select name="Contact">
+                <option value="Null">Please Select an Option</option>
+                <option value="Questions">Additional Questions</option>
+                <option value="Rec">Recommendation</option>
+                <option value="Personal">Personal Inquiry</option>
+            </Select>
+        </p>
+        <p>
+            Please Specify if you have had Persian food before:
+            Yes <input type="radio" value="Yes" name="Persianfood"/>
+            No <input type="radio" value="No" name="Persianfood"/>
+        </p>
+    
+        <p>
+            Select the continent you would like to see more content from: <br/>
+            <input type="checkbox" name="topic" value="HTML"/>North America <br/>
+            <input type="checkbox" name="topic" value="CSS"/>Europe <br/>
+            <input type="checkbox" name="topic" value="HTML"/>South America <br/>
+            <input type="checkbox" name="topic" value="CSS"/>Asia <br/>
+            <input type="checkbox" name="topic" value="HTML"/>Australia<br/>
+            <input type="checkbox" name="topic" value="CSS"/>Africa 
+        </p>
+    
+        <p>
+            Provide your comments: <br/>
+            <textarea name="comments" rows="5" cols="40">
+            </textarea>
+        </p>
+    
+        <p>
+            <input type="Submit" onclick="validate1()"onclick="validate()" name="Submit" value="Send"/>
+            <input type="Reset" name="Reset" value="Cancel"/>
+        </p>
+        </form>
+
+        <p id="sitemap">
+            <a id="bottom" href="sitemap.htm">Site Map</a>
+        </p>
+        
+  </body>
+</html>
+    

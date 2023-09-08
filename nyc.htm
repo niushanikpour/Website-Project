@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+  <meta name="author" content="Niusha Nikpour">
+	<meta name="description" content="NYC Persian Restaurants">
+	<meta name="keywords" content="nyc restaurant review, new york city, brooklyn restaurants, nyc restaurants, sofreh restaurant, Michilin star persian restaurant, sofreh, persian food nyc, nyc, brooklyn, persian food "/>
+	<title>NYC</title>
+<link rel="stylesheet" href="tpv1.css" type="text/css">
+
+  <style type="text/css">
+    div#photos { display:inline-flex }
+    div#photos1 {display: inline-flex;} 
+	img {width:300px; padding-left: 1%;}
+  h2 {color: palevioletred; font-family: helvetica; font-size: 25pt}
+  p {color:lightcoral; font-family: sans-serif; font-size: 15pt; margin-bottom: 0.5%;}
+  h1 {color:lightcoral; font-family: helvetica; font-size: 30pt}
+  .container { width: 60%;
+    height: 50%;
+    background-color: rgb(238, 181, 191);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;margin-bottom: 5%;}
+    .container #big {
+  display: none;
+}
+    div#b{text-align:center;}
+	p#pics {margin: auto; text-align: center;}
+  button {width:150px; height:40px; background-color:pink; font-family:arial; color:white}
+	img#a {width: 60%;height: 50%; margin: auto; text-align: center;}
+  ol {font-size: 15pt; font-family:sans-serif;padding:5%; margin:1%;color:palevioletred; font-weight: bold;background-color: lightpink;}
+  #sitemap {
+justify-content: center;
+background-image:url(persianrug.jpg); font-size: 20pt; color: white; 
+padding: 60px; text-align: center; text-decoration: underline; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 1%;
+}
+#bottom {text-decoration: none; color: white; text-decoration-color: white; font-family: helvetica;}
+#tables td {
+  width: 450px;
+  height: 400px;
+}
+#tables { margin: auto;
+  padding: 0;
+  margin-top: 10px;}
+  </style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+	/* Your JavaScript goes here */
+  var imgs2show= new Array ("sofreh1.jpg", "sofreh2.jpg", "sofreh3.jpg", "sofreh4.jpg", "sofreh5.jpg", "sofreh6.jpg", "sofreh7.jpg");   
+	var c=0;
+   var runflag =0;
+   var mycontrol;
+   function showSlides()
+    {var myimg=document.getElementById("a")
+        runflag=1;
+        myimg.src=imgs2show[c];
+        ++c;
+		myimg.style.width= "60%";
+		myimg.style.height= "40%";
+    if (c > imgs2show.length-1)
+    {c=0}
+    mycontrol=setTimeout("showSlides()",1000)}
+
+    function stopIt()
+{
+if (runflag==1)
+{runflag=0;
+clearTimeout(mycontrol);}
+else 
+{
+    mycontrol=setTimeout("showSlides()",1000);
+}
+}
+$(document).ready(function() {
+  $("#big").hover(function() {
+    $(this).fadeOut(200, function() {
+      $(this).text("NYC").fadeIn(200);
+    });
+  });
+});
+
+	</script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="bannerheading">Niusha's Persian Restaurant Review</h1>
+    </div>
+    <div class="navbar">
+      <a href="index.htm">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Northeast</button>
+        <div class="dropdown-content">
+          <a href="boston.htm">Boston</a>
+          <a href="nyc.htm">NYC</a>
+          <a href="dc.htm">D.C</a>
+        </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">Southeast</button>
+        <div class="dropdown-content">
+          <a href="southfl.htm">South FL</a>
+          <a href="atlanta.htm">Atlanta</a>
+        </div>
+      </div>
+  
+      <div class="dropdown">
+        <button class="dropbtn">International</button>
+        <div class="dropdown-content">
+          <a href="iran.htm">Iran</a>
+          <a href="london.htm">London</a>
+          <a href="paris.htm">Paris</a>
+      </div>
+      </div>
+      <a href="aboutme.htm">About Me</a>
+      <a href="contact.htm">Contact</a>
+      <a href="credits.htm">Credits</a>
+    </div>	
+    <!-- <audio controls autoplay loop>
+      <source src="persiansong.mp3" type="audio/mp3"/>
+    </audio> -->
+   <h1 id="big">NYC</h1>
+   <h2>Sofreh</h2>
+   <br/>
+   <h2> *This is top 3 for me in the U.S</h2>
+    <p id="fix">
+   Sofreh is located in Prospect Heights. in Brooklyn. In 2022 they received a Michilin star. 
+    This is definitely top of my list (and my parents list) for the best Persian food you can find in the U.S. The owner, Nasim Alikhani, is from Iran and this is her first restaurant ever. Sofreh is Farsi for a piece of fabric that food is typically placed and served on. Sometimes you can find Nasim in the restaurant talking to customers and the chefs. It is best to have your meal here in a family style, where you order a bunch of different meals and appetizers and share so that you can try a little bit of everything. I have been here a few times and it never disappoints. The decor and environment is really pretty and has a modern feel of traditional Persian decor. You have to go to the bathroom there as well; it is really cool. Their menu is seasonal, so dishes vary depending on what is in season. Some must-haves are their Eggplant Dip, Pomegranate Ribeye Kabob, Lamb Shank, and my all time favorite dessert at any Persian restaurant that has it, is the saffron, rose water, pistachio ice cream. Like at every Persian restaurant you need an order of the Tadhig and any kind of rice (they are all good). This place is not super expensive but definitely not budget friendly, as everything is made to share. It can range from $40-80 a person.
+    </p>
+    <table id="tables">
+      <tr>
+      <td>
+    <ol>
+      <li> Atmosphere </li> 
+        <ul>
+      <li>Location: 5/5</li>
+      <li>Look/Interior: 5/5</li>
+      <li>Service: 5/5</li>
+          </ul>
+      <li> Price: 4/5  </li>
+      <li>Food</li>
+        <ul>
+      <li>Variety: 4/5</li>
+      <li>Quality: 5/5</li>
+      <li>Overall: 4.7/5</li>
+          </ul>
+      </ol>
+</td>
+      <div class="container">
+     <td>
+        <p id="pics" onload="showSlides()">
+        <img id="a" src="sofreh1.jpg" alt="Bathroom in Sofreh" title="Slideshow of Sofreh" /> 
+    </div>
+
+    <div id="b">
+      <button onclick="stopIt()">Click to see more!</button>
+    </div>
+  </td>
+      </tr>
+</table>
+<p id="sitemap">
+	<a id="bottom" href="sitemap.htm">Site Map</a>
+</p>
+	 
+</body>
+</html>
+

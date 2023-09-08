@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- javascript
+1. index page: "click on welcome to my website!"- changes innerHTML
+2. boston page: slideshow of images 
+3. about me page: mouse over introduction paragraph - changes background color & text color 
+4. Washington D.C page: animation is used on title; word rotates once
+5. South FL page: Scrolling Marquee made with conditional formating
+6. Paris Page: Conditional statement on the word Paris; innerHTML goes from the word Paris to an Image
+7. London & Iran Page: javascript used with buttons to change page background
+8. COntact page: JavaScript is used to validate a form
+
+jQuery
+1. Atlanta Page: Click here button - animates the title Atlanta
+2. NYC Page: title NYC fades in and out
+3. Credits Page: Expanding text for the Honor Code
+-->
+<html lang="en"> 
+
+  <head>
+	<meta name="author" content="Niusha Nikpour">
+	<meta name="description" content="Persian Restaurant Reviews">
+	<meta name="keywords" content="food reviews, persian food, persian restaurant, iran, persian, persian food reviews,"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Niusha's Persian Restaurant Reviews</title>
+  <link rel="stylesheet" href="tpv1.css" type="text/css">
+
+  <style type="text/css">
+table,td {border:2px solid palevioletred; text-align: center;}
+tr#header{font-weight: bold; font-size: 14pt; background-color: salmon; color:#ffffff}
+audio { float:right}
+p#intro {color: salmon; font-family: helvetica; size: 16pt}
+h1#heading {color: palevioletred; font-style: italic; font-family: 'helvetica'; text-align: left;}
+div#row1 {display: flex; flex-direction: row;}
+div#photos {display:flex; flex-wrap: wrap; flex-wrap: wrap; margin-top: 3%;}
+img.pic {width: 20%;}
+ol {padding:5%; margin:2%;color:palevioletred; font-weight: bold;background-color: rgb(235, 184, 235);}
+figcaption {color: palevioletred; margin-bottom:3%;  font-family: helvetica;font-weight: bold;}
+#sitemap {
+justify-content: center;
+background-image:url(persianrug.jpg); font-size: 20pt; color: white; 
+padding: 60px; text-align: center; text-decoration: underline; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 1%;
+}
+#bottom {text-decoration: none; color: white; text-decoration-color: white; font-family: helvetica;}
+</style>
+	
+	<script>
+	/* Your JavaScript goes here */
+	// JavaScript is used to change the text 
+	function changeThis()
+{
+  var x = document.getElementById("heading"); 
+  if (x.innerHTML=="Welcome to my Website!")
+  {
+    x.innerHTML = "Hope you Enjoy :)";
+  }
+ else 
+  {
+    x.innerHTML="Welcome to my Website!";
+  }
+}
+	</script>
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+	<div class="header">
+		<h1 id="bannerheading">Niusha's Persian Restaurant Review</h1>
+	</div>
+
+	<div class="navbar">
+		<a href="index.htm">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Northeast</button>
+			<div class="dropdown-content">
+				<a href="boston.htm">Boston</a>
+				<a href="nyc.htm">NYC</a>
+				<a href="dc.htm"> Washington D.C</a>
+			</div>
+		  </div>
+	  	<div class="dropdown">
+ 			<button class="dropbtn">Southeast</button>
+			<div class="dropdown-content">
+				<a href="southfl.htm">South FL</a>
+				<a href="atlanta.htm">Atlanta</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">International</button>
+			<div class="dropdown-content">
+				<a href="iran.htm">Iran</a>
+				<a href="london.htm">London</a>
+				<a href="paris.htm">Paris</a>
+		</div>
+		</div>
+		<a href="aboutme.htm">About Me</a>
+		<a href="contact.htm">Contact</a>
+		<a href="credits.htm">Credits</a>
+	</div>	
+	<!-- <audio controls autoplay loop>
+		<source src="persiansong.mp3" type="audio/mp3"/>
+	</audio> -->
+<h1 id="heading" onclick="changeThis()">Welcome to my Website!</h1>
+
+
+<p id="intro">On this website you will find reviews for Persian restaurants in multiple cities inside and outside of the U.S I have been to (or my parents).
+</p>
+<div id="row1">
+<table>
+	<tr id="header">
+		<td>Cities Included</td>
+	</tr>
+	<tr>
+		<td>Boston</td>
+	</tr>
+	<tr>
+		<td>New York City</td>
+	</tr>
+	<tr>
+		<td>Washington D.C</td>
+	</tr>
+	<tr>
+		<td>Miami/South FL</td>
+	</tr>
+	<tr>
+		<td>Atlanta</td>
+	</tr>
+	<tr>
+		<td>Iran (country)</td>
+	</tr>
+	<tr>
+		<td>London</td>
+	</tr>
+	<tr>
+		<td>Paris</td>
+	</tr> 
+</table>
+
+
+<ol>
+<caption>What I plan to go over in my reviews:</caption>
+	<li> Atmosphere </li> 
+		<ul>
+	<li>Location</li>
+	<li>Look/Interior</li>
+	<li>Service</li>
+			</ul>
+
+	<li> Price  </li>
+	<li>Food</li>
+		<ul>
+	<li>Variety</li>
+	<li>Quality</li>
+	<li>Recommendations</li>
+			</ul>
+	</ol>
+<br/>
+<figure>
+	<figcaption>A clip of Anthony Bourdain's Parts Unknown clip in Iran</figcaption>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ysYGCtGYGdc" title="Anthony Bourdain" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</figure>
+	<br/>
+</div>
+<div id="photos">
+<img class="pic" src="https://i.pinimg.com/564x/fc/f6/af/fcf6af5a8736e8dbbed7ec521324c408.jpg" alt="breakfast" title="Persian Breakfast"/>
+<img class="pic"  src="https://i.pinimg.com/564x/b6/0f/9f/b60f9f91b1d3ab32b8a68a316571af15.jpg" alt="Persian Ice Cream" title="How to make Persian Ice Cream"/>
+<img class="pic" src="https://i.pinimg.com/564x/8d/7a/fb/8d7afb3782cdcb91a850ec9f35344082.jpg" alt="Photo" title="Persian Art"/>
+<img class="pic" src="https://i.pinimg.com/564x/3e/5d/50/3e5d50a96e285cd360a4f4d2bb354997.jpg" alt="Tehran" title="Milad Tower in Tehran"/>
+<img class="pic" src="https://i.pinimg.com/564x/05/3a/44/053a449f0fb92eb332c9e5f84eaa050f.jpg" alt="Mosque" title="Mosque in Isfahan"/>
+</div>
+<p id="sitemap">
+	<a id="bottom" href="sitemap.htm">Site Map</a>
+</p>
+</body>
+</html>

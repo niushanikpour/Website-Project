@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<meta name="author" content="Niusha Nikpour">
+	<meta name="description" content="About Me">
+	<meta name="keywords" content="persian food reviews, about me, persian, Niusha, Yazd, iran, persian food "/>
+	<title>About Me</title>
+<link rel="stylesheet" href="tpv1.css" type="text/css">
+<style type="text/css">
+div#mapandinfo {display: flex; flex-direction: row;}
+p#start {padding: 12px; font-family: helvetica; color:palevioletred; font-size: 15pt }
+button {width:150px; height:40px; background-color:pink; font-family:arial; color:white}
+.container { width: 60%;
+    height: 50%;
+    background-color: rgb(238, 181, 191);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;margin-bottom: 5%;}
+    div#b{text-align:center;}
+	p#pics {margin: auto; text-align: center;}
+	img#a {width: 60%;height: 50%; margin: auto; text-align: center;}
+	#vid {text-align: center; margin: auto;}
+#sitemap {
+justify-content: center;
+background-image:url(persianrug.jpg); font-size: 20pt; color: white; 
+padding: 60px; text-align: center; text-decoration: underline; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 1%;
+}
+#bottom {text-decoration: none; color: white; text-decoration-color: white; font-family: helvetica;}
+table,td {margin:auto;text-align: center;}
+	</style>
+	
+	<script type="text/javascript">
+	/* Your JavaScript goes here */
+
+	var imgs2show= new Array ("img-0492_orig.jpg","IMG-5456.jpg", "IMG-5454.jpg", "IMG-5455.jpg");   
+	var c=0;
+   var runflag =0;
+   var mycontrol;
+   function showSlides()
+    {var myimg=document.getElementById("a")
+        runflag=1;
+        myimg.src=imgs2show[c];
+        // myimg.style.boxShadow = "20px 20px 10px " + colors[c];
+        // document.getElementById("h").textContent= captions[c]
+        ++c;
+		myimg.style.width= "60%";
+		myimg.style.height= "40%";
+    if (c > imgs2show.length-1)
+    {c=0}
+    mycontrol=setTimeout("showSlides()",1000)}
+
+
+function stopIt()
+{
+if (runflag==1)
+{runflag=0;
+clearTimeout(mycontrol);}
+else 
+{
+    mycontrol=setTimeout("showSlides()",1000);
+}
+}
+// JavaScript is used to change the style (color)
+function changeColor()
+        {document.getElementById("start").style.color= "purple";
+		document.getElementById("start").style.backgroundColor= "lavender"
+	}
+        function originalColor()
+        {document.getElementById("start").style.color= "palevioletred";
+		document.getElementById("start").style.backgroundColor= "lavenderblush"
+	}
+
+
+	</script>
+  </head>
+
+  <body>
+    <div class="header">
+		<h1 id="bannerheading">Niusha's Persian Restaurant Review</h1>
+	</div>
+	<div class="navbar">
+		<a href="index.htm">Home</a>
+		<div class="dropdown">
+		  <button class="dropbtn">Northeast</button>
+		  <div class="dropdown-content">
+			<a href="boston.htm">Boston</a>
+			<a href="nyc.htm">NYC</a>
+			<a href="dc.htm">D.C</a>
+		  </div>
+		  </div>
+		  <div class="dropdown">
+		   <button class="dropbtn">Southeast</button>
+		  <div class="dropdown-content">
+			<a href="southfl.htm">South FL</a>
+			<a href="atlanta.htm">Atlanta</a>
+		  </div>
+		</div>
+	
+		<div class="dropdown">
+		  <button class="dropbtn">International</button>
+		  <div class="dropdown-content">
+			<a href="iran.htm">Iran</a>
+			<a href="london.htm">London</a>
+			<a href="paris.htm">Paris</a>
+		</div>
+		</div>
+		<a href="aboutme.htm">About Me</a>
+		<a href="contact.htm">Contact</a>
+		<a href="credits.htm">Credits</a>
+	  </div>
+	<!-- <audio controls autoplay loop>
+		<source src="persiansong.mp3" type="audio/mp3"/>
+	</audio> -->
+	<div id="mapandinfo">
+	<map name="iran" id="map">
+		<area shape="rect" coords="253, 255,307,250" href="https://visitworldheritage.com/en/eu/historic-city-of-yazd/6edbda36-6a91-48d2-8a95-77837e84818a" alt="History of Yazd, Iran"/>
+		<area shape="rect" coords="173, 131, 245, 146" href="https://www.britannica.com/place/Tehran" alt="History of Tehran"/>
+				<img id="map1" src="iranmap.gif" alt="Map of Iran" title="Iran" usemap="#iran"/>
+	</map>
+   <p id="start" onmouseout="originalColor()" onmouseover="changeColor()">
+Hi! My name is Niusha and I am from Miami, Florida. Growing up, I ate a lot of Persian food 
+all over the world (but mainly in the U.S). Both of my parents were born and raised in Iran and like to 
+find new Persian restaurants to try. I decided to share my opinion and ratings for a few of the restaurants 
+I have been to, or my parents have been to. My parents were mainly raised in Yazd, which is a really interesting 
+city and very unique in Iran. Towards the bottom of the page, you can watch a video that shows Yazd and talks about the history of it. In my slideshow below, I have a few pictures of persian things. After the image of me, there is a picture of little desserts in a box. 
+These are desserts you typically have with tea. The second image is a haft-sin table for Nowruz. Nowruz is essentially the celebration of the Persian New Year, which is on the first day of Spring. This photo is an example of what the haft-sin (haft-sin) looks like. Each item on the table stands for something. For example, the sprouts symbolize rebirth. The next picture is a tray of chai and nabat, which is just crystalized sugar flavored with saffron. You put the nabat into the tea as a sweetener. 
+</p>
+</div>
+<br/>
+<table>
+	<tr>
+<div class="container">
+<p id="pics" onload="showSlides()">
+<img id="a" src="img-0492_orig.jpg" alt="me" title="Photo of Me" />
+</div>   
+<div id="b">
+	<button onclick="stopIt()">Click to see more!</button>
+</div>
+
+
+</p> 
+</tr>
+</table>
+<div id="vid">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2zj4NguF6ws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+<p id="sitemap">
+	<a id="bottom" href="sitemap.htm">Site Map</a>
+</p>
+	 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

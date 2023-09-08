@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+  <meta name="author" content="Niusha Nikpour">
+	<meta name="description" content="Paris Persian Restaurants">
+	<meta name="keywords" content="paris restaurant review, shabestan, persian restaurant, shabestan paris, persian food paris, paris, persian food "/>
+	<title>Paris</title>
+<link rel="stylesheet" href="tpv1.css" type="text/css">
+
+  <style type="text/css">
+	div#photos { display:inline-flex;  } 
+	img {width:350px; padding-left: 1%;}
+  h2 {color: palevioletred; font-family: helvetica; font-size: 25pt}
+  p {color:lightcoral; font-family: sans-serif; font-size: 15pt}
+  h1 {color:lightcoral; font-family: helvetica; font-size: 30pt}
+  .container { width: 60%;
+    height: 50%;
+    background-color: rgb(238, 181, 191);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;margin-bottom: 5%;}
+    div#b{text-align:center;}
+	p#pics {margin: auto; text-align: center;}
+  button {width:150px; height:40px; background-color:pink; font-family:arial; color:white}
+	img#a {width: 60%;height: 50%; margin: auto; text-align: center;}
+	ol {font-size: 15pt; font-family:sans-serif;padding:5%; margin:1%;color:palevioletred; font-weight: bold;background-color: lightpink;}
+  #sitemap {
+justify-content: center;
+background-image:url(persianrug.jpg); font-size: 20pt; color: white; 
+padding: 60px; text-align: center; text-decoration: underline; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 1%;
+}
+#bottom {text-decoration: none; color: white; text-decoration-color: white; font-family: helvetica;}
+#tables td {
+  width: 550px;
+  height: 450px;
+}
+#tables { margin: auto;
+  padding: 0;
+  margin-top: 5px;}
+  </style>
+	
+	<script>
+	/* Your JavaScript goes here */
+  var imgs2show= new Array ("shab1.jpg", "shab2.jpg", "shab3.jpg");   
+	var c=0;
+   var runflag =0;
+   var mycontrol;
+   function showSlides()
+    {var myimg=document.getElementById("a")
+        runflag=1;
+        myimg.src=imgs2show[c];
+        ++c;
+		myimg.style.width= "60%";
+		myimg.style.height= "40%";
+    if (c > imgs2show.length-1)
+    {c=0}
+    mycontrol=setTimeout("showSlides()",1000)}
+
+    
+function stopIt()
+{
+if (runflag==1)
+{runflag=0;
+clearTimeout(mycontrol);}
+else 
+{
+    mycontrol=setTimeout("showSlides()",1000);
+}
+}
+function textImg() {
+  var changingElement = document.getElementById("title");
+  if (changingElement.innerHTML == "Paris") {
+    changingElement.innerHTML = '<img src="pme.jpg" alt="Eiffel Tower" title="Me in Paris">';
+  } else {
+    changingElement.innerHTML = "Paris";
+  }
+}
+</script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="bannerheading">Niusha's Persian Restaurant Review</h1>
+    </div>
+    <div class="navbar">
+      <a href="index.htm">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Northeast</button>
+        <div class="dropdown-content">
+          <a href="boston.htm">Boston</a>
+          <a href="nyc.htm">NYC</a>
+          <a href="dc.htm"> Washington D.C</a>
+        </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">Southeast</button>
+        <div class="dropdown-content">
+          <a href="southfl.htm">South FL</a>
+          <a href="atlanta.htm">Atlanta</a>
+        </div>
+      </div>
+  
+      <div class="dropdown">
+        <button class="dropbtn">International</button>
+        <div class="dropdown-content">
+          <a href="iran.htm">Iran</a>
+          <a href="london.htm">London</a>
+          <a href="paris.htm">Paris</a>
+      </div>
+      </div>
+      <a href="aboutme.htm">About Me</a>
+      <a href="contact.htm">Contact</a>
+      <a href="credits.htm">Credits</a>
+    </div>	
+    <!-- <audio controls autoplay loop>
+      <source src="persiansong.mp3" type="audio/mp3"/>
+    </audio> -->
+    <h1 id="title" onclick="textImg()">Paris</h1>
+    <br/>
+    <h2>Shabestan</h2>
+    <p>
+ Shabestan is on Champs-Elysee in Paris. the location is great and super central to the busiest parts of Paris. The interior is pretty modern but in a European way since it 
+ still has that historic feel. The bar is the most interesting part. I put a photo of it below; it looks 
+ like a gold bird is at the end of it. The have all the basics here as well, and the portion size is average 
+ but shareable. I would not say that there is a wide range of options, but they do have the basics. They also have the Persian ice cream that I like, so that is a plus. The third photo in the slideshow below (after the image of the kabob dish) is what a 
+ Shabestan means in English. The cost is about 30-40 € a person, but for the location, this is cheaper than other options nearby.
+    </p>
+    <table id="tables">
+      <tr>
+      <td>
+    <ol>
+      <li> Atmosphere </li> 
+        <ul>
+      <li>Location: 5/5</li>
+      <li>Look/Interior: 4/5</li>
+      <li>Service: 4/5</li>
+          </ul>
+      <li> Price: 4/5  </li>
+      <li>Food</li>
+        <ul>
+      <li>Variety: 3.5/5</li>
+      <li>Quality: 3.8/5</li>
+      <li>Overall: 4/5</li>
+          </ul>
+      </ol>
+</p>
+      </td>
+<div class="container">
+  <td>
+    <p id="pics" onload="showSlides()">
+    <img id="a" src="shab1.jpg" alt="The Bar Inside" title="Slideshow of Shabestan" /> 
+</div>
+<div id="b">
+  <button onclick="stopIt()">Click to see more!</button>
+</div>
+</td>
+</tr>
+</table>
+
+  <p id="sitemap">
+    <a id="bottom" href="sitemap.htm">Site Map</a>
+  </p>
+     
+
+<!-- 
+    <div id="photos">
+<img src="shab1.jpg" alt="The Bar inside" title="The Gold Bird on the Bar">
+<img src="shab2.jpg" alt="Dinner Dish" title="A Kabob Dish">
+<img src="shab3.jpg" alt="A Shabestan" title="What a Shabestan Looks Like"> 
+    </div> -->
+  </body>
+</html>

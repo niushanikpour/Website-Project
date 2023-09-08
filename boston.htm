@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<meta name="author" content="Niusha Nikpour">
+	<meta name="description" content="Boston Persian Restaurants">
+	<meta name="keywords" content="boston restaurant review, roksanas, persian restaurant, roksanas, persian food watertown, boston, persian food "/>
+  <title>Boston</title>
+<link rel="stylesheet" href="tpv1.css" type="text/css">
+
+  <style type="text/css">
+  /* div#photos { display: inline-flex; flex-direction: row; }  */
+  img {width:30%; padding-left: 1%;}
+  h2 {color: palevioletred; font-family: helvetica; font-size: 25pt}
+  p {color:lightcoral; font-family: sans-serif; font-size: 15pt}
+  h1 {color:lightcoral; font-family: helvetica; font-size: 30pt}
+  .container { width: 60%;
+    height: 50%;
+    background-color: rgb(238, 181, 191);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;margin-bottom: 5%;}
+    div#b{text-align:center;}
+	p#pics {margin: auto; text-align: center;}
+  button {width:150px; height:40px; background-color:pink; font-family:arial; color:white}
+	img#a {width: 60%;height: 50%; margin: auto; text-align: center;}
+	ol {font-size: 15pt; font-family:sans-serif;padding:5%; margin:1%;color:palevioletred; font-weight: bold;background-color: lightpink;}
+  #sitemap {
+justify-content: center;
+background-image:url(persianrug.jpg); font-size: 20pt; color: white; 
+padding: 60px; text-align: center; text-decoration: underline; margin-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 1%;
+}
+#bottom {text-decoration: none; color: white; text-decoration-color: white; font-family: helvetica;}
+#tables td {
+  width: 450px;
+  height: 400px;
+}
+#tables { margin: auto;
+  padding: 0;
+  margin-top: 10px;}
+ </style>
+	
+	<script>
+	/* Your JavaScript goes here */
+  var imgs2show= new Array ("roksanas1.jpg", "roksanas2.jpg", "roksanas3.jpg");   
+	var c=0;
+   var runflag =0;
+   var mycontrol;
+   function showSlides()
+    {var myimg=document.getElementById("a")
+        runflag=1;
+        myimg.src=imgs2show[c];
+        ++c;
+		myimg.style.width= "60%";
+		myimg.style.height= "40%";
+    if (c > imgs2show.length-1)
+    {c=0}
+    mycontrol=setTimeout("showSlides()",1000)
+//   if (imgs2show=="roksanas1.jpg")
+//   {myimg.alt=="Individual Kabob Dish"
+//   myimg.title=="Kabob Dish"}
+//   else if(imgs2show=="roksanas2.jpg")
+//   {myimg.alt=="Interior of the Restaurant"
+// myimg.title=="The Interior"}
+// else (imgs2show=="roksanas3.jpg")
+// {myimg.alt=="Market Inside the Store"
+// myimg.title=="Market Located Inside"}
+  
+  
+  
+  }
+
+
+function stopIt()
+{
+if (runflag==1)
+{runflag=0;
+clearTimeout(mycontrol);}
+else 
+{
+    mycontrol=setTimeout("showSlides()",1000);
+}
+}
+
+
+
+
+  // <img src="roksanas2.jpg" alt="Interior of the Restaurant" title="The Interior">
+  //     <img src="roksanas3.jpg" alt="Market inside the Store" title="Market Located Inside">
+	</script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="bannerheading">Niusha's Persian Restaurant Review</h1>
+    </div>
+    <div class="navbar">
+      <a href="index.htm">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Northeast</button>
+        <div class="dropdown-content">
+          <a href="boston.htm">Boston</a>
+          <a href="nyc.htm">NYC</a>
+          <a href="dc.htm"> Washington D.C</a>
+        </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">Southeast</button>
+        <div class="dropdown-content">
+          <a href="southfl.htm">South FL</a>
+          <a href="atlanta.htm">Atlanta</a>
+        </div>
+      </div>
+  
+      <div class="dropdown">
+        <button class="dropbtn">International</button>
+        <div class="dropdown-content">
+          <a href="iran.htm">Iran</a>
+          <a href="london.htm">London</a>
+          <a href="paris.htm">Paris</a>
+      </div>
+      </div>
+      <a href="aboutme.htm">About Me</a>
+      <a href="contact.htm">Contact</a>
+      <a href="credits.htm">Credits</a>
+    </div>	
+    <!-- <audio controls autoplay loop>
+      <source src="persiansong.mp3" type="audio/mp3"/>
+    </audio> -->
+    <h1>Boston (Watertown)</h1>
+    <br/>
+    <h2>Roksana's</h2>
+    <p>
+    This place is only really good for take-out, especially for families and bigger groups in general but 
+    they also have single orders. They offer family style meals, so you can get a bunch of dishes in really large quantities. 
+    You can buy any dips or sides you want, and can even choose the amount because you pay by the pound.  
+    Their rice, salads, dips, and meats are good and pretty traditional. It is mainly run by a Persian family and they are 
+    super sweet and willing to help if you do not know what to get or how much to get. They have a little market inside as well 
+    so you can buy other Persian snacks, foods, drinks, honestly everything. They also have a deli counter if you want a specific amount of dips or salads. This restaurant is on a
+    street that has a lot of other Persian things; there is a big Persian market nearby and next door is an ice 
+    cream shop that sells Persian inspired flavors. Roksana’s is on the affordable side, costing $15-20 a person.
+    </p>
+    <table id="tables">
+      <tr>
+        <td>
+      <ol>
+          <li> Atmosphere </li> 
+            <ul>
+          <li>Location: 4/5</li>
+          <li>Look/Interior: 3/5</li>
+          <li>Service: 5/5</li>
+              </ul>
+          <li> Price: 4.5/5  </li>
+          <li>Food</li>
+            <ul>
+          <li>Variety: 3.8/5</li>
+          <li>Quality: 3.8/5</li>
+          <li>Overall: 4/5</li>
+              </ul>
+          </ol>
+          </td>
+    <div class="container">
+     
+        <td>
+        <p id="pics" onload="showSlides()">
+        <img id="a" src="roksanas1.jpg" alt="Individual Kabob Meal" title="Kabob Dish" /> 
+    </div>
+    <div id="b">
+      <button onclick="stopIt()">Click to see more!</button>
+    </div>
+  </td>
+  </tr>
+  </table>
+
+    <p id="sitemap">
+      <a id="bottom" href="sitemap.htm">Site Map</a>
+    </p>
+  </body>
+</html>
